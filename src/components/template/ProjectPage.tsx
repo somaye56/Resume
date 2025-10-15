@@ -33,7 +33,7 @@ const ProjectPage = () => {
               className="group block h-[180px] bg-gradient-to-br  p-6 rounded-3xl shadow-md hover:shadow-lg transition-all bg-[#896C6C]/10  duration-300"
             >
               <div className="flex flex-col h-full text-left">
-                {/* 🔹 Title + Icon */}
+         
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-lg font-semibold text-[#374151] group-hover:text-[#555879]/50 transition-colors duration-300">
                     {project.name}
@@ -41,14 +41,14 @@ const ProjectPage = () => {
                   <ExternalLink className="w-5 h-5 text-[#A2AF9B] group-hover:text-[#555879]/50 transition-colors duration-300" />
                 </div>
 
-                {/* 🔸 Description */}
+       
                 {project.description && (
                   <p className="text-sm text-slate-600 leading-relaxed mb-3 flex-grow">
                     {project.description}
                   </p>
                 )}
 
-                {/* 🔸 Company */}
+          
                 <p className="text-sm text-[#6B7280] font-medium mb-2">
                   {project.company}
                 </p>

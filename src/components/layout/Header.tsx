@@ -65,11 +65,11 @@ const Header = ({ locale }: HeaderProps) => {
   };
 
   const navItems: NavItem[] = [
-    { id: "home", label: profile("homePage"), href: `/${currentLocale}` },
+    { id: "contact", label: Contact("title"), href: `/${currentLocale}/contact` },
     { id: "projects", label: p("title"), href: `/${currentLocale}/project` },
     { id: "experience", label: Experience("title"), href: `/${currentLocale}/experience` },
     { id: "education", label: Education("title"), href: `/${currentLocale}/education` },
-    { id: "contact", label: Contact("title"), href: `/${currentLocale}/contact` },
+    { id: "home", label: profile("homePage"), href: `/${currentLocale}` },
   ];
 
   return (
@@ -86,32 +86,33 @@ const Header = ({ locale }: HeaderProps) => {
 
           <nav className="hidden lg:block">
             <ul className="flex items-center space-x-3 rtl:space-x-reverse">
-              {navItems.map((item) => (
-                <li key={item.id} className="relative group ml-2">
-                  <Link
-                    href={item.href}
-                    className={`relative px-3 py-2 text-sm transition-all duration-300 ${activeSection === item.id
-                        ? "text-[#323232]"
-                        : "text-[#323232] hover:text-[#896C6C]"
-                      }`}
-                  >
-                    {item.label}
-                    <span
-                      className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#AF3E3E] to-[#E5BEB5] transition-all duration-300 ${activeSection === item.id
-                          ? "w-full"
-                          : "w-0 group-hover:w-full"
-                        }`}
-                    />
-                  </Link>
-                </li>
-              ))}
-
               <li
                 onClick={toggleLanguage}
                 className="cursor-pointer ml-4 px-2 py-1 rounded hover:bg-gray-100/50 transition-colors"
               >
                 {currentLocale === "fa" ? "English" : "فارسی"}
               </li>
+              {navItems.map((item) => (
+                <li key={item.id} className="relative group ml-2">
+                  <Link
+                    href={item.href}
+                    className={`relative px-3 py-2 text-sm transition-all duration-300 ${activeSection === item.id
+                      ? "text-[#323232]"
+                      : "text-[#323232] hover:text-[#896C6C]"
+                      }`}
+                  >
+                    {item.label}
+                    <span
+                      className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#AF3E3E] to-[#E5BEB5] transition-all duration-300 ${activeSection === item.id
+                        ? "w-full"
+                        : "w-0 group-hover:w-full"
+                        }`}
+                    />
+                  </Link>
+                </li>
+              ))}
+
+
             </ul>
           </nav>
 
@@ -152,8 +153,8 @@ const Header = ({ locale }: HeaderProps) => {
                 key={item.id}
                 onClick={() => handleNavClick(item)}
                 className={`w-full text-start px-4 py-2 rounded-lg text-sm transition-all ${activeSection === item.id
-                    ? "text-[#AF3E3E] bg-[#AF3E3E]/10"
-                    : "hover:text-[#DA6C6C]"
+                  ? "text-[#AF3E3E] bg-[#AF3E3E]/10"
+                  : "hover:text-[#DA6C6C]"
                   }`}
               >
                 {item.label}
@@ -165,7 +166,7 @@ const Header = ({ locale }: HeaderProps) => {
             <div className="flex justify-between items-center">
               <button
                 onClick={toggleLanguage}
-                className="text-sm text-[#5B78F6] font-medium px-2 py-1 rounded hover:bg-blue-50 transition-colors"
+                className="text-sm text-[#AF3E3E] font-medium px-2 py-1 rounded hover:bg-blue-50 transition-colors"
               >
                 {currentLocale === "fa" ? "English" : "فارسی"}
               </button>

@@ -37,8 +37,8 @@ const Footer = () => {
                     </a>
                 </div>
                 © {new Date().getFullYear()} Somaye Baniasadi — Built with{" "}
-                <span className="text-[#5B78F6]">Next.js</span> &{" "}
-                <span className="text-[#5B78F6]">Tailwind CSS</span>
+                <span className="text-[#AF3E3E]">Next.js</span> &{" "}
+                <span className="text-[#AF3E3E]">Tailwind CSS</span>
             </footer>
         </>
     )

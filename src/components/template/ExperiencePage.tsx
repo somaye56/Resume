@@ -26,18 +26,18 @@ const ExperiencePage = () => {
                             className="group block w-full  bg-gradient-to-br  p-6 rounded-3xl shadow-md hover:shadow-lg transition-all bg-[#896C6C]/10  duration-300"
                         >
                             <div className="flex justify-between  gap-2 mb-2">
-                                <h3 className="font-medium text-[#324E2B] text-lg">
+                                <h3 className="font-medium text-lg">
                                     {exp.position}
                                 </h3>
                                 <span className="text-sm text-slate-500">{exp.years}</span>
                             </div>
 
-                            <p className="text-sm text-[#5B78F6] font-medium mb-1">
+                            <p className="text-sm text-[#AF3E3E] font-semibold mb-1">
                                 {exp.company}
                             </p>
                             <p className="text-xs text-slate-500 mb-3">{exp.city}</p>
 
-                            <ul className="space-y-1 text-sm text-slate-600 list-disc ltr:list-inside rtl:list-outside rtl:pr-4">
+                            <ul className="space-y-1 text-sm text-slate-600">
                                 {exp.responsibilities.map((item: string, idx: number) => (
                                     <li key={idx} className="leading-relaxed">
                                         {item}

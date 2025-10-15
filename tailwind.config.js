@@ -22,21 +22,24 @@ export default {
         "bg-from": "#D6A99D",
         "bg-via": "#FFF2EF",
         "bg-to": "#ADB2D4",
+        "custom-red": "#AF3E3E",
+        "custom-brown": "#DA6C6C",
 
         //  رنگ‌های متنی
         "text-primary": "#324E2B",
         "text-secondary": "#71543A",
         "text-muted": "#463d3b",
-        "text-link": "#5B78F6",
 
-        //  رنگ‌های پس‌زمینه‌ی عناصر
+
         "card-bg": "#896C6C1A",
         "tag-bg": "#FFF58A80",
 
-        //  رنگ‌های بوردر و سایه
+
         "border-light": "#C9D3C2",
         "border-dark": "#463d3b",
         "shadow-green": "#A2AF9B",
+
+    
       },
       
       backgroundImage: {

@@ -32,12 +32,10 @@ const EducationPage = () => {
                                 <span className="text-sm text-slate-500">{exp.field}</span>
                             </div>
 
-                            <p className="text-sm text-[#5B78F6] font-medium mb-1">
+                            <p className="text-sm text-[#AF3E3E] font-medium mb-1">
                                 {exp.university}
                             </p>
                             <p className="text-xs text-slate-500 mb-3">{exp.years}</p>
-
-                        
                         </motion.div>
                     ))}
                 </div>

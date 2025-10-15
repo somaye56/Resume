@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import LineComponent from '../elements/LineComponent';
 const AboutPage = () => {
     const About = useTranslations("about")
     const HomePage = useTranslations("homePage")
@@ -41,9 +42,10 @@ const AboutPage = () => {
 
                         className="rounded-full mx-auto mb-4 "
                     />
-                    <h3 className="text-sm text-center text-[#AF3E3E] mb-3 border-b-2 border-[#EAEBD0] pb-1">
+                    <h3 className="text-sm text-center  mb-3 pb-1">
                         {HomePage("wellcome")}
                     </h3>
+                    <LineComponent className="mb-4" />
                     <ul className="text-sm font-semibold  space-y-2">
                         <li className="flex items-center justify-center  gap-2">
                             {HomePage("name")} {HomePage("lastName")}
