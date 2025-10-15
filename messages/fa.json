@@ -1,0 +1,178 @@
+{
+  "homePage": {
+    "wellcome": "سلام! به سایت شخصی من خوش آمدید",
+    "homePage": "صفحه اصلی",
+    "job": "توسعه‌دهنده فرانت‌اند",
+    "name": "سمیه",
+    "lastName": "بنی‌اسدی",
+    "don": "دانلود رزومه",
+    "desc": "من یک توسعه‌دهنده فرانت‌اند در کرمان هستم با بیش از دو سال تجربه حرفه‌ای در زمینه React.js و Next.js. به نوآوری، یادگیری مداوم و طراحی رابط کاربری جذاب علاقه‌مندم."
+  },
+  "about": {
+    "title": "درباره من",
+    "birthDate": "۱۳۷۳/۹/۲۸",
+    "maritalStatus": "مجرد",
+    "email": "s0maye.baniasadiii@gmail.com",
+    "phone": "09356130954",
+    "city": "کرمان",
+    "SOne": "توسعه‌دهنده Front-End با بیش از ۲ سال تجربه حرفه‌ای",
+    "STwo": "فارغ‌التحصیل کارشناسی و کارشناسی ارشد فیزیک با گرایش هسته‌ای و سامانه‌های پیچیده",
+    "STree": "پس از گذراندن بوت‌کمپ وارد دنیای حرفه‌ای برنامه‌نویسی شدم",
+    "SFour": "تخصص در JavaScript، React.js و Next.js",
+    "SFive": "طراحی و توسعه وب‌سایت‌های واکنش‌گرا و کاربرپسند با تمرکز بر HTML، CSS، JavaScript و React.js",
+    "SSix": "علاقه‌مند به نوآوری، یادگیری مداوم و ارتقای تجربه کاربری با کدنویسی بهینه و طراحی جذاب"
+  },
+  "education": {
+    "title": "تحصیلات",
+    "items": [
+      {
+        "degree": "کارشناسی",
+        "field": "فیزیک - گرایش هسته‌ای",
+        "university": "دانشگاه کرمان",
+        "years": "۱۳۹۲ - ۱۳۹۶"
+      },
+      {
+        "degree": "کارشناسی ارشد",
+        "field": "فیزیک - گرایش آماری و سامانه‌های پیچیده",
+        "university": "دانشگاه الزهراء، تهران",
+        "years": "۱۳۹۷ - ۱۳۹۹"
+      }
+    ]
+  },
+  "experience": {
+    "title": "سوابق کاری",
+    "items": [
+      {
+        "position": "توسعه‌دهنده فرانت‌اند",
+        "company": "شرکت طراحان سیستم پنام",
+        "city": "کرمان",
+        "years": "آذر ۱۴۰۲ تا مرداد ۱۴۰۴",
+        "responsibilities": [
+          "مشارکت در توسعه پلتفرم نوبت‌دهی پزشکان (arenap.ir)",
+          "همکاری در پروژه‌های شرکتی و فروشگاهی",
+          "یکپارچه‌سازی API‌ها و مدیریت جریان داده بین کلاینت و سرور",
+          "توسعه و انتشار کتابخانه کامپوننت‌های قابل استفاده مجدد به‌عنوان پکیج npm",
+          "پیاده‌سازی معماری مبتنی بر ویژگی و پشتیبانی از TypeScript برای مقیاس‌پذیری"
+        ]
+      },
+      {
+        "position": "کارآموز توسعه‌دهنده فرانت‌اند",
+        "company": "گروه آموزشی مپصا (Mapsa HR)",
+        "city": "تهران",
+        "years": "آبان ۱۴۰۱ تا اسفند ۱۴۰۱",
+        "responsibilities": [
+          "دوره پیشرفته JavaScript و React",
+          "تسلط بر مفاهیم پیشرفته JavaScript شامل Hosting، Deep & Shallow Cloning، Closure، Recursion، Sorting، Deep Searching",
+          "طراحی و بهینه‌سازی Redux و Virtual DOM، تجربه حرفه‌ای با Redux Saga و Axios",
+          "شرکت در پروژه‌های عملی برای تقویت مهارت‌های فرانت‌اند",
+          "پروژه: اپلیکیشن یادگیری زبان انگلیسی (PWA) با React، Ionic و Redux",
+          "پروژه: اپلیکیشن بازی املای کلمات با Supabase، Redux Saga، React و Ionic"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "پروژه‌ها",
+    "items": [
+      {
+        "name": "همکاری در توسعه پروژه نوبت دهی اینترنتی پزشکان آرناپ",
+        "link": "https://arenap.ir/",
+        "company": "کارفرما / درخواست کننده: طراحان سیستم پنام"
+      },
+      {
+        "name": "همکاری در توسعه و پیاده سازی پروژه حامیو",
+        "link": "https://hamimo.org/",
+        "company": "کارفرما / درخواست کننده: طراحان سیستم پنام"
+      },
+      {
+        "name": "همکاری در توسعه و پیاده سازی پروژه کاوش انرژی کویر",
+        "link": "https://kavoshenergykavir.ir/",
+        "company": "کارفرما / درخواست کننده: طراحان سیستم پنام"
+      },
+      {
+        "name": "همکاری در توسعه و پیاده سازی پروژه آتورینا فن گستر کارمانیا",
+        "link": "http://atorinaco.ir/",
+        "company": "کارفرما / درخواست کننده: طراحان سیستم پنام"
+      }
+    ]
+  },
+  "skills": {
+    "title": "مهارت‌ها",
+    "frontend": {
+      "title": "فرانت‌اند",
+      "items": [
+        "جاوااسکریپت",
+        "تایپ‌اسکریپت",
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Bootstrap",
+        "HeroUI",
+        "ShadCN"
+      ]
+    },
+    "stateManagement": {
+      "title": "مدیریت وضعیت",
+      "items": [
+        "React Query",
+        "Redux",
+        "Redux Saga",
+        "Formik",
+        "React Hook Form",
+        "Axios"
+      ]
+    },
+    "tools": {
+      "title": "ابزارها",
+      "items": [
+        "Git",
+        "GitHub",
+        "npm",
+        "Docker",
+        "Postman",
+        "Swagger"
+      ]
+    },
+    "architecture": {
+      "title": "معماری",
+      "items": [
+        "کتابخانه‌های کامپوننت",
+        "معماری مبتنی بر ویژگی",
+        "طراحی واکنش‌گرا",
+        "PWA"
+      ]
+    },
+    "backend": {
+      "title": "بک‌اند",
+      "items": [
+        "MongoDB",
+        "Supabase",
+        "Vercel"
+      ]
+    }
+  },
+  "languages": {
+    "english": {
+      "reading": "خوب",
+      "writing": "متوسط",
+      "speaking": "متوسط",
+      "listening": "خوب"
+    }
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/somaye-baniasadi",
+    "github": "https://github.com/somaye56",
+    "email": "mailto:s0maye.baniasadiii@gmail.com"
+  },
+  "contact": {
+    "title": "ارتباط با من",
+    "name": "نام",
+    "email": "ایمیل",
+    "message": "پیام",
+    "send": "ارسال",
+    "sending": "در حال ارسال...",
+    "namePlaceholder": "نام خود را وارد کنید",
+    "emailPlaceholder": "ایمیل خود را وارد کنید",
+    "messagePlaceholder": "پیام خود را بنویسید"
+  }
+}

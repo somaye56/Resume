@@ -1,0 +1,178 @@
+{
+  "homePage": {
+    "wellcome": "Hi! Welcome to my personal website",
+    "homePage": "HomePage",
+    "job": "Front-End Developer",
+    "name": "Somaye",
+    "lastName": "Baniasadi",
+    "don": "Download Resume",
+    "desc": "I'm a Front-End Developer based in Kerman with over two years of professional experience in React.js and Next.js. Passionate about innovation, continuous learning, and creating engaging user interfaces."
+  },
+  "about": {
+    "title": "About Me",
+    "birthDate": "1994/12/19",
+    "maritalStatus": "Single",
+    "email": "s0maye.baniasadiii@gmail.com",
+    "phone": "09356130954",
+    "city": "Kerman",
+    "SOne": "Front-End developer with 2+ years of professional experience",
+    "STwo": "Holds Bachelor's and Master's degrees in Physics, specializing in Nuclear and Complex Systems",
+    "STree": "Started professional programming career after completing an intensive bootcamp",
+    "SFour": "Proficient in JavaScript, React.js, and Next.js",
+    "SFive": "Building responsive, user-friendly websites with a focus on HTML, CSS, JavaScript, and React.js",
+    "SSix": "Passionate about innovation, continuous learning, and improving user experience through clean, efficient code and engaging design"
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "degree": "Bachelor's Degree",
+        "field": "Physics - Nuclear Branch",
+        "university": "University of Kerman",
+        "years": "2013 - 2017"
+      },
+      {
+        "degree": "Master's Degree",
+        "field": "Physics - Statistical & Complex Systems",
+        "university": "Alzahra University, Tehran",
+        "years": "2018 - 2020"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "position": "Front-End Developer",
+        "company": "PENAM System Designers",
+        "city": "Kerman",
+        "years": "Dec 2023 – Aug 2025",
+        "responsibilities": [
+          "Contributed to the development of the doctor appointment platform (arenap.ir)",
+          "Collaborated on corporate and e-commerce web projects",
+          "Integrated APIs and managed data flow between client and server",
+          "Developed and published a reusable UI component library as an npm package",
+          "Implemented a feature-based architecture with TypeScript for scalability"
+        ]
+      },
+      {
+        "position": "Front-End Developer Intern",
+        "company": "Mapsa HR Educational Group",
+        "city": "Tehran",
+        "years": "Nov 2022 – Mar 2023",
+        "responsibilities": [
+          "Completed an advanced JavaScript and React course",
+          "Gained deep understanding of JavaScript concepts such as Hoisting, Deep & Shallow Cloning, Closure, Recursion, Sorting, and Deep Searching",
+          "Designed and optimized Redux and Virtual DOM with professional experience using Redux Saga and Axios",
+          "Participated in hands-on projects to strengthen front-end development skills",
+          "Project: English learning PWA built with React, Ionic, and Redux",
+          "Project: Word spelling game app using Supabase, Redux Saga, React, and Ionic"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Collaboration in the development of the Arenap online doctor appointment system",
+        "link": "https://arenap.ir/",
+        "company": "Client / Requested by: Penam System Designers"
+      },
+      {
+        "name": "Collaboration in the development and implementation of the Hamimo project",
+        "link": "https://hamimo.org/",
+        "company": "Client / Requested by: Penam System Designers"
+      },
+      {
+        "name": "Collaboration in the development and implementation of the Kavosh Energy Kavir project",
+        "link": "https://kavoshenergykavir.ir/",
+        "company": "Client / Requested by: Penam System Designers"
+      },
+      {
+        "name": "Collaboration in the development and implementation of the Atorina Fan Gostar Karmania project",
+        "link": "http://atorinaco.ir/",
+        "company": "Client / Requested by: Penam System Designers"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": {
+      "title": "Frontend",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Bootstrap",
+        "HeroUI",
+        "ShadCN"
+      ]
+    },
+    "stateManagement": {
+      "title": "State Management",
+      "items": [
+        "React Query",
+        "Redux",
+        "Redux Saga",
+        "Formik",
+        "React Hook Form",
+        "Axios"
+      ]
+    },
+    "tools": {
+      "title": "Tools",
+      "items": [
+        "Git",
+        "GitHub",
+        "npm",
+        "Docker",
+        "Postman",
+        "Swagger"
+      ]
+    },
+    "architecture": {
+      "title": "Architecture",
+      "items": [
+        "Component Libraries",
+        "Feature-based Architecture",
+        "Responsive Design",
+        "PWA"
+      ]
+    },
+    "backend": {
+      "title": "Backend",
+      "items": [
+        "MongoDB",
+        "Supabase",
+        "Vercel"
+      ]
+    }
+  },
+  "languages": {
+    "english": {
+      "reading": "Good",
+      "writing": "Intermediate",
+      "speaking": "Intermediate",
+      "listening": "Good"
+    }
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/somaye-baniasadi",
+    "github": "https://github.com/somaye56",
+    "email": "mailto:s0maye.baniasadiii@gmail.com"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "Enter your email",
+    "messagePlaceholder": "Write your message"
+  }
+}

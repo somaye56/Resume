@@ -18,10 +18,11 @@
         "name": "next"
       }
     ],
+    
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/component/icons/loading.jsx", "src/component/icons/support.jsx", "src/component/icons/Linkedin.jsx"],
   "exclude": ["node_modules"]
 }

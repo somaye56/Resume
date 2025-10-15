@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* ---------- Theme Variables ---------- */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: left;
+}
+
+html[dir="ltr"] {
+  direction: ltr;
+  text-align: right;
+}
+:root {
+  --line-color: #AF3E3E;
+}
+.line {
+  position: relative;
+}
+
+
+.line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 66.666667%; 
+  height: 2px; 
+  display: block;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, transparent 0%, var(--line-color) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+
+
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary,#ADB2D5,
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 255, 218, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(193, 133, 109,0.8);
+}
