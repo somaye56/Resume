@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import React from 'react'
 import LineComponent from "../elements/LineComponent";
+import Card from "../elements/Card";
 
 interface Project {
   name: string;
@@ -28,19 +29,10 @@ const ProjectPage = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project: Project, i: number) => (
-            <motion.a
-              key={i}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              whileHover={{ scale: 1.04 }}
-              className="group block h-[180px] bg-gradient-to-br  p-6 rounded-3xl shadow-md hover:shadow-lg transition-all bg-[#896C6C]/10  duration-300"
-            >
+            <Card key={i} animated index={i} inViewOnly={true} >
+
               <div className="flex flex-col h-full text-left">
-         
+
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-lg font-semibold text-[#374151] group-hover:text-[#555879]/50 transition-colors duration-300">
                     {project.name}
@@ -48,19 +40,18 @@ const ProjectPage = () => {
                   <ExternalLink className="w-5 h-5 text-[#A2AF9B] group-hover:text-[#555879]/50 transition-colors duration-300" />
                 </div>
 
-       
+
                 {project.description && (
                   <p className="text-sm text-slate-600 leading-relaxed mb-3 flex-grow">
                     {project.description}
                   </p>
                 )}
 
-          
+
                 <p className="text-sm text-[#6B7280] font-medium mb-2">
                   {project.company}
                 </p>
 
-                {/* 🔸 Technologies */}
                 {project.technologies && (
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.technologies.map((tech: string, techIndex: number) => (
@@ -74,7 +65,8 @@ const ProjectPage = () => {
                   </div>
                 )}
               </div>
-            </motion.a>
+            </Card>
+
           ))}
         </div>
       </section>

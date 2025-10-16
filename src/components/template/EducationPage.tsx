@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
 import LineComponent from "../elements/LineComponent";
+import Card from "../elements/Card";
 interface EducationItem {
     degree: string;
     field: string;
@@ -22,15 +23,8 @@ const EducationPage = () => {
                 <LineComponent className="mb-6" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mx-auto justify-items-stretch ">
                     {education.map((exp: EducationItem, i: number) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: i * 0.1 }}
-                            whileHover={{ scale: 1.04 }}
-                            className="group block w-full  bg-gradient-to-br  p-6 rounded-3xl shadow-md hover:shadow-lg transition-all bg-[#896C6C]/10  duration-300"
-                        >
-                            <div className="flex justify-between  gap-2 mb-2">
+                       <Card key={i} animated index={i} inViewOnly={true} >
+                                  <div className="flex justify-between  gap-2 mb-2">
                                 <h3 className="font-medium text-[#324E2B] text-lg">
                                     {exp.degree}
                                 </h3>
@@ -41,7 +35,9 @@ const EducationPage = () => {
                                 {exp.university}
                             </p>
                             <p className="text-xs text-slate-500 mb-3">{exp.years}</p>
-                        </motion.div>
+                        </Card>
+                       
+                     
                     ))}
                 </div>
             </section>

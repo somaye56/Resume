@@ -10,6 +10,7 @@ import LineComponent from "@/components/elements/LineComponent";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import Card from "../elements/Card";
 
 const ContactSchema = z.object({
   name: z.string().min(2, "نام باید حداقل ۲ کاراکتر باشد").max(100, "بسیار طولانی است"),
@@ -75,8 +76,9 @@ const ContactPage: React.FC = () => {
         </h2>
       </div>
       <LineComponent className="mb-6" />
-      <motion.div className="group block bg-gradient-to-br p-6 rounded-3xl shadow-md hover:shadow-lg transition-all bg-[#896C6C]/10 duration-300">
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4" noValidate>
+      <Card 
+      >
+ <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4" noValidate>
           <div >
             <label className="block mb-1 text-sm font-medium" htmlFor="name">
               {Contact("name") || "Name"}
@@ -151,7 +153,9 @@ const ContactPage: React.FC = () => {
           </div>
 
         </form>
-      </motion.div>
+
+      </Card>
+
     </section>
   );
 };
