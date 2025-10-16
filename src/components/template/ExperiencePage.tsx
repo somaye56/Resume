@@ -3,9 +3,17 @@ import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
 import LineComponent from "../elements/LineComponent";
 
+interface ExperienceItem {
+    position: string;
+    years: string;
+    company: string;
+    city: string;
+    responsibilities: string[];
+}
+
 const ExperiencePage = () => {
     const Experience = useTranslations("experience");
-    const experience = Experience.raw("items");
+    const experience: ExperienceItem[] = Experience.raw("items");
     return (
         <>
             <section >
@@ -16,7 +24,7 @@ const ExperiencePage = () => {
                 </div>
                 <LineComponent className="mb-6" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mx-auto justify-items-stretch ">
-                    {experience.map((exp: any, i: number) => (
+                    {experience.map((exp: ExperienceItem, i: number) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 30 }}

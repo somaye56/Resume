@@ -174,5 +174,109 @@
     "namePlaceholder": "نام خود را وارد کنید",
     "emailPlaceholder": "ایمیل خود را وارد کنید",
     "messagePlaceholder": "پیام خود را بنویسید"
+  },
+  "personalLibrary": {
+    "title": "کتابخونه شخصی",
+    "search " : "جست و جو کنید",
+    "articles": {
+      "title": "مقالات منتخب",
+      "items": [
+        {
+          "title": "راهنمای جامع React Query",
+          "author": "TanStack",
+          "link": "https://tanstack.com/query/latest"
+        },
+        {
+          "title": "مقدمه‌ای بر React Hook Form",
+          "author": "React Hook Form Docs",
+          "link": "https://react-hook-form.com/get-started"
+        },
+        {
+          "title": "آشنایی با TypeScript برای توسعه‌دهندگان React",
+          "author": "TypeScript Handbook",
+          "link": "https://www.typescriptlang.org/docs/handbook/intro.html"
+        },
+        {
+          "title": "مرجع کامل جاوااسکریپت",
+          "author": "MDN Web Docs",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        }
+      ]
+    },
+    "courses": {
+      "title": "دوره‌های آموزشی",
+      "items": [
+        {
+          "title": "آموزش Next.js به صورت پروژه‌محور",
+          "platform": "سبز لرن",
+          "link": "https://sabzlearn.ir/"
+        },
+        {
+          "title": "آموزش جامع و پروژه محور Tailwind Css ",
+          "platform": "سبز لرن",
+          "link": "https://sabzlearn.ir/"
+        },
+        {
+          "title": "آموزش React – مقدماتی تا پیشرفته",
+          "platform": " فرانت کست",
+          "link": "https://frontcast.ir/"
+        },
+        {
+          "title": "آموزش TypeScript – دوره جامع",
+          "platform": " فرانت کست",
+          "link": "https://frontcast.ir/"
+        }
+      ]
+    },
+    "tools": {
+      "title": "ابزارهای مفید",
+      "items": [
+        {
+          "name": "Figma",
+          "description": "طراحی رابط کاربری و پروتوتایپ",
+          "link": "https://figma.com/"
+        },
+        {
+          "name": "Vercel",
+          "description": "استقرار سریع پروژه‌های Next.js",
+          "link": "https://vercel.com/"
+        },
+        {
+          "name": "Postman",
+          "description": "تست و مستندسازی APIها برای توسعه‌دهندگان وب",
+          "link": "https://www.postman.com/"
+        },
+        {
+          "name": "GitHub",
+          "description": "مدیریت نسخه، همکاری تیمی و میزبانی کد",
+          "link": "https://github.com/"
+        },
+        {
+          "name": "Visual Studio Code",
+          "description": "محیط توسعه قدرتمند و محبوب برای برنامه‌نویسان",
+          "link": "https://code.visualstudio.com/"
+        }
+      ]
+    },
+    "videos": {
+      "title": "ویدیوهای آموزشی",
+      "items": [
+        {
+          "title": "دوره آموزش تایپ اسکریپت (typescript)",
+          "channel": "neonlearn",
+          "link": "https://www.youtube.com/watch?v=ECR36qoVXvY"
+        },
+        {
+          "title": "آموزش React Query",
+          "channel": "MicroFrontend",
+          "link": "https://www.youtube.com/watch?v=1pF4fFcbnfU&list=PLJ9zDGwhhsBzELHNdflPj4XgS2hAXBILz"
+        },
+        {
+          "title": "آموزش Redux Toolkit",
+          "channel": "Masood Sadri",
+          "link": "https://www.youtube.com/watch?v=zqj2BlouedQ"
+        }
+      ]
+    }
   }
 }

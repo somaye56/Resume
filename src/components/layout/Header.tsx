@@ -24,6 +24,7 @@ const Header = ({ locale }: HeaderProps) => {
   const Contact = useTranslations("contact");
   const Experience = useTranslations("experience");
   const Education = useTranslations("education");
+  const PersonalLibrary = useTranslations("personalLibrary");
   const p = useTranslations("projects");
 
   const router = useRouter();
@@ -66,6 +67,7 @@ const Header = ({ locale }: HeaderProps) => {
 
   const navItems: NavItem[] = [
     { id: "contact", label: Contact("title"), href: `/${currentLocale}/contact` },
+    { id: "personalLibrary", label: PersonalLibrary("title"), href: `/${currentLocale}/personalLibrary` },
     { id: "projects", label: p("title"), href: `/${currentLocale}/project` },
     { id: "experience", label: Experience("title"), href: `/${currentLocale}/experience` },
     { id: "education", label: Education("title"), href: `/${currentLocale}/education` },

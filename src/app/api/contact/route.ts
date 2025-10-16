@@ -35,10 +35,14 @@ export async function POST(req: Request) {
       message: " پیام با موفقیت ارسال شد ✅",
       info,
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error("Email error:", error);
+    let errMessage = "Unknown error";
+    if (error instanceof Error) {
+      errMessage = error.message;
+    }
     return NextResponse.json(
-      { success: false, message: "خطا در ارسال ایمیل", error: error.message },
+      { success: false, message: "خطا در ارسال ایمیل", error: errMessage },
       { status: 500 }
     );
   }

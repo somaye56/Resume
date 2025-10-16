@@ -5,11 +5,18 @@ import { useTranslations } from 'next-intl';
 import React from 'react'
 import LineComponent from "../elements/LineComponent";
 
+interface Project {
+  name: string;
+  link: string;
+  description?: string;
+  company: string;
+  technologies?: string[];
+}
 
 const ProjectPage = () => {
 
   const Projects = useTranslations("projects");
-  const projects = Projects.raw("items");
+  const projects = Projects.raw("items") as Project[];
   return (
     <>
       <section className="text-center">
@@ -20,7 +27,7 @@ const ProjectPage = () => {
         <LineComponent className="mb-6" />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          {projects.map((project: any, i: number) => (
+          {projects.map((project: Project, i: number) => (
             <motion.a
               key={i}
               href={project.link}

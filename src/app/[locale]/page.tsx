@@ -4,11 +4,10 @@ import LineComponent from "@/components/elements/LineComponent";
 import AboutPage from "@/components/template/AboutPage";
 import { useTranslations } from "next-intl";
 import {
-  FaReact,
-  FaDatabase,
-  FaTools,
   FaProjectDiagram,
-  FaServer
+  FaReact,
+  FaServer,
+  FaTools
 } from "react-icons/fa";
 import {
   SiRedux
@@ -64,7 +63,7 @@ export default function ResumePortfolio() {
         <LineComponent className="mb-6" />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3  gap-4 ">
-          {categories.map((category, i) => {
+          {categories.map((category) => {
             const title = Skills(`${category.key}.title`);
             const items = Skills.raw(`${category.key}.items`);
 

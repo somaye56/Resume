@@ -174,5 +174,112 @@
     "namePlaceholder": "Enter your name",
     "emailPlaceholder": "Enter your email",
     "messagePlaceholder": "Write your message"
-  }
+  },
+  
+    "personalLibrary": {
+      "title": "Personal Library",
+      "search": "Search...",
+      "articles": {
+        "title": "Selected Articles",
+        "items": [
+          {
+            "title": "Comprehensive Guide to React Query",
+            "author": "TanStack",
+            "link": "https://tanstack.com/query/latest"
+          },
+          {
+            "title": "Introduction to React Hook Form",
+            "author": "React Hook Form Docs",
+            "link": "https://react-hook-form.com/get-started"
+          },
+          {
+            "title": "Getting Started with TypeScript for React Developers",
+            "author": "TypeScript Handbook",
+            "link": "https://www.typescriptlang.org/docs/handbook/intro.html"
+          },
+          {
+            "title": "Complete JavaScript Reference",
+            "author": "MDN Web Docs",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+          }
+        ]
+      },
+      "courses": {
+        "title": "Educational Courses",
+        "items": [
+          {
+            "title": "Project-Based Next.js Training",
+            "platform": "SabzLearn",
+            "link": "https://sabzlearn.ir/"
+          },
+          {
+            "title": "Comprehensive Project-Based Tailwind CSS Course",
+            "platform": "SabzLearn",
+            "link": "https://sabzlearn.ir/"
+          },
+          {
+            "title": "React Training – Beginner to Advanced",
+            "platform": "FrontCast",
+            "link": "https://frontcast.ir/"
+          },
+          {
+            "title": "TypeScript Training – Complete Course",
+            "platform": "FrontCast",
+            "link": "https://frontcast.ir/"
+          }
+        ]
+      },
+      "tools": {
+        "title": "Useful Tools",
+        "items": [
+          {
+            "name": "Figma",
+            "description": "UI design and prototyping",
+            "link": "https://figma.com/"
+          },
+          {
+            "name": "Vercel",
+            "description": "Fast deployment of Next.js projects",
+            "link": "https://vercel.com/"
+          },
+          {
+            "name": "Postman",
+            "description": "API testing and documentation for web developers",
+            "link": "https://www.postman.com/"
+          },
+          {
+            "name": "GitHub",
+            "description": "Version control, team collaboration, and code hosting",
+            "link": "https://github.com/"
+          },
+          {
+            "name": "Visual Studio Code",
+            "description": "Powerful and popular development environment",
+            "link": "https://code.visualstudio.com/"
+          }
+        ]
+      },
+      "videos": {
+        "title": "Educational Videos",
+        "items": [
+          {
+            "title": "TypeScript Training Course",
+            "channel": "neonlearn",
+            "link": "https://www.youtube.com/watch?v=ECR36qoVXvY"
+          },
+          {
+            "title": "React Query Tutorial",
+            "channel": "MicroFrontend",
+            "link": "https://www.youtube.com/watch?v=1pF4fFcbnfU&list=PLJ9zDGwhhsBzELHNdflPj4XgS2hAXBILz"
+          },
+          {
+            "title": "Redux Toolkit Tutorial",
+            "channel": "Masood Sadri",
+            "link": "https://www.youtube.com/watch?v=zqj2BlouedQ"
+          }
+        ]
+      }
+    }
+  
+  
 }

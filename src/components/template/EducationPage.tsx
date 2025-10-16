@@ -2,10 +2,15 @@
 import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
 import LineComponent from "../elements/LineComponent";
-
+interface EducationItem {
+    degree: string;
+    field: string;
+    university: string;
+    years: string;
+}
 const EducationPage = () => {
     const Education = useTranslations("education");
-    const education = Education.raw("items");
+    const education: EducationItem[] = Education.raw("items");
     return (
         <>
             <section >
@@ -16,7 +21,7 @@ const EducationPage = () => {
                 </div>
                 <LineComponent className="mb-6" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mx-auto justify-items-stretch ">
-                    {education.map((exp: any, i: number) => (
+                    {education.map((exp: EducationItem, i: number) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 30 }}
