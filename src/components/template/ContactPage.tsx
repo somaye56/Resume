@@ -146,7 +146,7 @@ const ContactPage: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group relative px-4 py-2 bg-gradient-to-r from-custom-red to-custom-brown hover:from-custom-orange] hover:to-custom-brown text-custom-text]  text-sm rounded-xl shadow-lg transition-all duration-300 transform  hover:shadow-xl"
+              className="group relative px-4 py-2 bg-gradient-to-r text-custom-text from-custom-red to-custom-brown hover:from-custom-orange] hover:to-custom-brown text-custom-text]  text-sm rounded-xl shadow-lg transition-all duration-300 transform  hover:shadow-xl"
             >
               {isSubmitting ? (Contact("sending") || "در حال ارسال...") : (Contact("send") || "ارسال")}
             </button>

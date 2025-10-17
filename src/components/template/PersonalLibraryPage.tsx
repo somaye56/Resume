@@ -85,7 +85,7 @@ const PersonalLibraryPage = () => {
                 </h2>
                 <LineComponent className="mb-6" />
                 <div className="max-w-4xl mx-auto ">
-                    <div tabIndex={0} // لازم برای blur
+                    <div tabIndex={0} 
                         onBlur={() => setShowFilters(false)} className="flex flex-wrap gap-3 mb-4 justify-center items-center relative w-full">
 
                         <form
@@ -114,7 +114,7 @@ const PersonalLibraryPage = () => {
 
                             <button
                                 type="submit"
-                                className={`absolute p-2.5 rounded-full bg-gradient-to-br from-custom-red to-custom-brown text-white hover:opacity-90 shadow-md transition-all duration-200
+                                className={`absolute p-2.5 rounded-full bg-gradient-to-br from-custom-red to-custom-brown text-custom-text hover:opacity-90 shadow-md transition-all duration-200
           ${locale === "fa" ? "right-2" : "left-2"}`}
                             >
                                 <IoSearch size={18} />
@@ -132,7 +132,7 @@ const PersonalLibraryPage = () => {
                         </button> */}
                         <button
                             onClick={() => setShowFilters(!showFilters)}
-                            className="px-4 py-2 rounded-xl text-sm font-medium bg-gradient-to-br from-custom-red to-custom-brown text-white transition-all flex items-center gap-2"
+                            className="px-4 py-2 rounded-xl text-sm font-medium bg-gradient-to-br from-custom-red to-custom-brown text-custom-text transition-all flex items-center gap-2"
                         >
                             <IoFilter size={16} />
                             {locale === "fa" ? "فیلتر" : "Filter"}
