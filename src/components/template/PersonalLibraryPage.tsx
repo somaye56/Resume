@@ -70,11 +70,11 @@ const PersonalLibraryPage = () => {
         setQuery("");
     };
 
-    const toggleFilter = (filter: string) => {
+    const toggleFilter = (key: string) => {
         setActiveFilters(prev =>
-            prev.includes(filter)
-                ? prev.filter(f => f !== filter)
-                : [...prev, filter]
+            prev.includes(key)
+                ? prev.filter(f => f !== key)
+                : [...prev, key]
         );
     };
     return (
@@ -84,8 +84,9 @@ const PersonalLibraryPage = () => {
                     {t("title")}
                 </h2>
                 <LineComponent className="mb-6" />
-                <div className="max-w-4xl mx-auto">
-                    <div className="flex flex-wrap gap-3 mb-4 justify-center items-center relative w-full">
+                <div className="max-w-4xl mx-auto ">
+                    <div tabIndex={0} // لازم برای blur
+                        onBlur={() => setShowFilters(false)} className="flex flex-wrap gap-3 mb-4 justify-center items-center relative w-full">
 
                         <form
                             onSubmit={handleSearch}
@@ -131,7 +132,7 @@ const PersonalLibraryPage = () => {
                         </button> */}
                         <button
                             onClick={() => setShowFilters(!showFilters)}
-                            className="px-4 py-2 rounded-2xl text-sm font-medium  text-custom-red border border-custom-red transition-all flex items-center gap-2"
+                            className="px-4 py-2 rounded-xl text-sm font-medium bg-gradient-to-br from-custom-red to-custom-brown text-white transition-all flex items-center gap-2"
                         >
                             <IoFilter size={16} />
                             {locale === "fa" ? "فیلتر" : "Filter"}
@@ -141,7 +142,8 @@ const PersonalLibraryPage = () => {
                     {showFilters && (
 
                         <div
-                            className={`absolute z-10 top-[13.29rem]  w-36 bg-[#FFF2EF] rounded-2xl ${locale === "fa" ? "right-1/6" : "left-1/4"
+                            className={`absolute z-10 top-[13.29rem]  w-36 bg-white
+                                 rounded-2xl ${locale === "fa" ? "right-1/6" : "left-1/4"
                                 }`}
                         >
                             <div className="flex flex-col gap-2 p-3">
@@ -153,7 +155,7 @@ const PersonalLibraryPage = () => {
                                 ].map((filter) => (
                                     <button
                                         key={filter.key}
-                                        onClick={() => toggleFilter(filter.key)}
+                                        onMouseDown={() => toggleFilter(filter.key)}
                                         className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300
                                             ${activeFilters.includes(filter.key)
                                                 ? "text-custom-red after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-custom-red after:to-custom-brown"
