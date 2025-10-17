@@ -25,16 +25,16 @@ const EducationPage = () => {
                     {education.map((exp: EducationItem, i: number) => (
                        <Card key={i} animated index={i} inViewOnly={true} >
                                   <div className="flex justify-between  gap-2 mb-2">
-                                <h3 className="font-medium text-[#324E2B] text-lg">
+                                <h3 className="font-medium  text-lg">
                                     {exp.degree}
                                 </h3>
-                                <span className="text-sm text-slate-500">{exp.field}</span>
+                                <span className="text-sm text-text-secondary">{exp.field}</span>
                             </div>
 
-                            <p className="text-sm text-[#AF3E3E] font-medium mb-1">
+                            <p className="text-sm text-custom-red font-medium mb-1">
                                 {exp.university}
                             </p>
-                            <p className="text-xs text-slate-500 mb-3">{exp.years}</p>
+                            <p className="text-xs text-text-secondary mb-3">{exp.years}</p>
                         </Card>
                        
                      

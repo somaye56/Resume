@@ -17,7 +17,7 @@ const Footer = () => {
                         href={social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-slate-500 hover:text-[#0A66C2] transition-colors duration-200"
+                        className="text-text-secondary hover:text-custom-red transition-colors duration-200"
                     >
                         <FaLinkedin size={22} />
                     </a>
@@ -25,20 +25,20 @@ const Footer = () => {
                         href={social.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-slate-500 hover:text-black dark:hover:text-white transition-colors duration-200"
+                        className="text-text-secondary hover:text-custom-red dark:hover:text-white transition-colors duration-200"
                     >
                         <FaGithub size={22} />
                     </a>
                     <a
                         href={social.email}
-                        className="text-slate-500 hover:text-red-500 transition-colors duration-200"
+                        className="text-text-secondary hover:text-custom-red transition-colors duration-200"
                     >
                         <FaEnvelope size={22} />
                     </a>
                 </div>
                 © {new Date().getFullYear()} Somaye Baniasadi — Built with{" "}
-                <span className="text-[#AF3E3E]">Next.js</span> &{" "}
-                <span className="text-[#AF3E3E]">Tailwind CSS</span>
+                <span className="text-custom-red">Next.js</span> &{" "}
+                <span className="text-custom-red">Tailwind CSS</span>
             </footer>
         </>
     )

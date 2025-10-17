@@ -19,7 +19,7 @@ export default function Card({
   const content = (
    
     <div
-      className={`mb-6 rounded-2xl bg-gradient-to-br p-6 bg-[#896C6C]/10 shadow-sm hover:shadow-md transition-all duration-300 h-full ${className}`}
+      className={`mb-6 rounded-2xl bg-gradient-to-br p-6 bg-card-bg/10 shadow-sm hover:shadow-md transition-all duration-300 h-full ${className}`}
     >
       {children}
     </div>

@@ -45,7 +45,7 @@ export default async function LocaleLayout({
 
       </head>
       <body className={cn(
-        `bg-gradient-to-br min-h-screen text-muted  from-[#D6A99D] via-[#FFF2EF] to-[#ADB2D4]  ${locale === "en" ? inter.className : iranSans.className}`
+        `bg-gradient-to-br min-h-screen text-muted  from-bg-from via-bg-via to-bg-to  ${locale === "en" ? inter.className : iranSans.className}`
       )}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>

@@ -81,7 +81,7 @@ const Header = ({ locale }: HeaderProps) => {
       <div className="max-w-6xl mx-auto text-nowrap">
         <div className="flex items-center justify-between py-4 px-4">
           <div className="flex items-center gap-2">
-            <h1 className="text-lg font-semibold bg-gradient-to-r from-[#896C6C] to-[#AF3E3E] bg-clip-text text-transparent">
+            <h1 className="text-lg font-semibold bg-gradient-to-r from-card-bg to-custom-red bg-clip-text text-transparent">
               Somayeh Baniasadi
             </h1>
           </div>
@@ -99,13 +99,13 @@ const Header = ({ locale }: HeaderProps) => {
                   <Link
                     href={item.href}
                     className={`relative px-3 py-2 text-sm transition-all duration-300 ${activeSection === item.id
-                      ? "text-[#323232]"
-                      : "text-[#323232] hover:text-[#896C6C]"
+                      ? "text-text-secondary"
+                      : "text-text-secondary hover:text-card-bg"
                       }`}
                   >
                     {item.label}
                     <span
-                      className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#AF3E3E] to-[#E5BEB5] transition-all duration-300 ${activeSection === item.id
+                      className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-custom-red to-custom-text] transition-all duration-300 ${activeSection === item.id
                         ? "w-full"
                         : "w-0 group-hover:w-full"
                         }`}
@@ -123,7 +123,7 @@ const Header = ({ locale }: HeaderProps) => {
               <a
                 download
                 href="/Resume_SomayehBaniasadi.pdf"
-                className="group relative overflow-hidden px-4 py-2.5 bg-gradient-to-r from-[#AF3E3E] to-[#DA6C6C] hover:from-[#CD5656] hover:to-[#DA6C6C] text-[#E5BEB5] font-semibold text-sm rounded-xl shadow-lg transition-all duration-300 transform hover:shadow-xl"
+                className="group text-custom-text relative overflow-hidden px-4 py-2.5 bg-gradient-to-r from-custom-red to-custom-brown hover:from-custom-orange] hover:to-custom-brown text-custom-text] font-semibold text-sm rounded-xl shadow-lg transition-all duration-300 transform hover:shadow-xl"
               >
                 <span className="relative z-10 flex items-center space-x-2 rtl:space-x-reverse gap-2">
                   <span>{profile("don")}</span>
@@ -137,7 +137,7 @@ const Header = ({ locale }: HeaderProps) => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden text-[#323232] text-2xl p-2 rounded-md hover:bg-[#EAEBD0]/60 transition-all"
+              className="lg:hidden text-text-secondary text-2xl p-2 rounded-md hover:bg-[#EAEBD0]/60 transition-all"
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {isMobileMenuOpen ? <IoCloseOutline /> : <IoMenuOutline />}
@@ -155,8 +155,8 @@ const Header = ({ locale }: HeaderProps) => {
                 key={item.id}
                 onClick={() => handleNavClick(item)}
                 className={`w-full text-start px-4 py-2 rounded-lg text-sm transition-all ${activeSection === item.id
-                  ? "text-[#AF3E3E] bg-[#AF3E3E]/10"
-                  : "hover:text-[#DA6C6C]"
+                  ? "text-custom-red bg-custom-red/10"
+                  : "hover:text-custom-brown"
                   }`}
               >
                 {item.label}
@@ -168,7 +168,7 @@ const Header = ({ locale }: HeaderProps) => {
             <div className="flex justify-between items-center">
               <button
                 onClick={toggleLanguage}
-                className="text-sm text-[#AF3E3E] font-medium px-2 py-1 rounded hover:bg-blue-50 transition-colors"
+                className="text-sm text-custom-red font-medium px-2 py-1 rounded hover:bg-blue-50 transition-colors"
               >
                 {currentLocale === "fa" ? "English" : "فارسی"}
               </button>
@@ -176,7 +176,7 @@ const Header = ({ locale }: HeaderProps) => {
               <a
                 download
                 href="/Resume_SomayehBaniasadi.pdf"
-                className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#AF3E3E] to-[#DA6C6C] text-[#E5BEB5] rounded-xl text-sm font-semibold hover:shadow-md transition-all"
+                className="flex items-center text-custom-text gap-2 px-4 py-2 bg-gradient-to-r from-custom-red to-custom-brown text-custom-text] rounded-xl text-sm font-semibold hover:shadow-md transition-all"
               >
                 {profile("don")} <IoDownloadOutline />
               </a>

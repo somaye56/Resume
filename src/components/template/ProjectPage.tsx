@@ -1,10 +1,8 @@
 "use client"
-import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { useTranslations } from 'next-intl';
-import React from 'react'
-import LineComponent from "../elements/LineComponent";
 import Card from "../elements/Card";
+import LineComponent from "../elements/LineComponent";
 
 interface Project {
   name: string;
@@ -34,36 +32,22 @@ const ProjectPage = () => {
               <div className="flex flex-col h-full text-left">
 
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-semibold text-[#374151] group-hover:text-[#555879]/50 transition-colors duration-300">
+                  <h3 className="text-lg font-semibold  transition-colors duration-300">
                     {project.name}
                   </h3>
-                  <ExternalLink className="w-5 h-5 text-[#A2AF9B] group-hover:text-[#555879]/50 transition-colors duration-300" />
+                  <ExternalLink className="w-5 h-5 text-bg-to group-hover:text-text-secondary50 transition-colors duration-300" />
                 </div>
 
 
                 {project.description && (
-                  <p className="text-sm text-slate-600 leading-relaxed mb-3 flex-grow">
+                  <p className="text-sm leading-relaxed mb-3 flex-grow">
                     {project.description}
                   </p>
                 )}
 
-
-                <p className="text-sm text-[#6B7280] font-medium mb-2">
+                <p className="text-sm font-medium mb-2 text-card-bg">
                   {project.company}
                 </p>
-
-                {project.technologies && (
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.technologies.map((tech: string, techIndex: number) => (
-                      <span
-                        key={techIndex}
-                        className="px-3 py-1 text-xs bg-[#E5E7EB] text-[#324E2B] rounded-full font-medium group-hover:bg-[#A2AF9B]/20 transition-colors duration-300"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </div>
             </Card>
 

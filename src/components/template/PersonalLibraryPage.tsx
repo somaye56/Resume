@@ -84,35 +84,67 @@ const PersonalLibraryPage = () => {
                     {t("title")}
                 </h2>
                 <LineComponent className="mb-6" />
-                <div className="max-w-2xl mx-auto mb-6">
-                    <div className="flex gap-2 mb-4 justify-center relative">
-                        <button
-                            className={`px-3 py-2 rounded-lg text-sm transition-all ${true
-                                ? 'bg-[#AF3E3E] text-white'
-                                : 'bg-gray-200  hover:bg-gray-300'
+                <div className="max-w-4xl mx-auto">
+                    <div className="flex flex-wrap gap-3 mb-4 justify-center items-center relative w-full">
+
+                        <form
+                            onSubmit={handleSearch}
+                            className="relative flex items-center justify-center w-full sm:w-3/4"
+                        >
+                            <input
+                                type="text"
+                                placeholder={locale === "fa" ? "جستجو کنید..." : "Search..."}
+                                value={query}
+                                onChange={(e) => setQuery(e.target.value)}
+                                className={`w-full rounded-3xl bg-tag-bg/50 backdrop-blur-md py-2.5 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-custom-red/70 transition-all duration-300 shadow-sm
+          ${locale === "fa" ? "pr-12 pl-4 text-right" : "pl-12 pr-4 text-left"}`}
+                            />
+
+                            {query && (
+                                <button
+                                    type="button"
+                                    onClick={clearSearch}
+                                    className={`absolute p-1 text-gray-400 hover:text-gray-600 transition-colors
+            ${locale === "fa" ? "left-12" : "right-12"}`}
+                                >
+                                    <IoClose size={16} />
+                                </button>
+                            )}
+
+                            <button
+                                type="submit"
+                                className={`absolute p-2.5 rounded-full bg-gradient-to-br from-custom-red to-custom-brown text-white hover:opacity-90 shadow-md transition-all duration-200
+          ${locale === "fa" ? "right-2" : "left-2"}`}
+                            >
+                                <IoSearch size={18} />
+                            </button>
+                        </form>
+
+                        {/* <button
+                            className={`px-3 py-2 rounded-xl text-sm transition-all ${true
+                                ? 'bg-custom-red text-white'
+                                : 'bg-custom-text  hover:bg-custom-text'
                                 }`}
                         >
                             {locale === "fa" ? "جستجوی هوشمند" : "Smart Search"}
 
-                        </button>
-
+                        </button> */}
                         <button
                             onClick={() => setShowFilters(!showFilters)}
-                            className="px-4 py-2 rounded-lg text-sm bg-[#D6A99D] text-gray-700 hover:bg-[#AF3E3E] hover:text-white transition-all flex items-center gap-2"
+                            className="px-4 py-2 rounded-2xl text-sm font-medium  text-custom-red border border-custom-red transition-all flex items-center gap-2"
                         >
                             <IoFilter size={16} />
                             {locale === "fa" ? "فیلتر" : "Filter"}
                         </button>
-
-
                     </div>
+
                     {showFilters && (
 
                         <div
-                            className={`absolute z-10 top-1/5  w-36 bg-[#FFF2EF] rounded-2xl ${locale === "fa" ? "right-[30rem]" : "left-1/4"
+                            className={`absolute z-10 top-[13.29rem]  w-36 bg-[#FFF2EF] rounded-2xl ${locale === "fa" ? "right-1/6" : "left-1/4"
                                 }`}
                         >
-                            <div className="flex flex-col gap-2 p-3 ">
+                            <div className="flex flex-col gap-2 p-3">
                                 {[
                                     { key: "articles", label: locale === "fa" ? "مقالات" : "Articles" },
                                     { key: "courses", label: locale === "fa" ? "دوره‌ها" : "Courses" },
@@ -122,10 +154,12 @@ const PersonalLibraryPage = () => {
                                     <button
                                         key={filter.key}
                                         onClick={() => toggleFilter(filter.key)}
-                                        className={`px-3 py-1.5 text-sm rounded-lg text-center transition-all ${activeFilters.includes(filter.key)
-                                            ? "bg-gradient-to-r from-[#DA6C6C] to-[#AF3E3E] text-white shadow-sm"
-                                            : "text-gray-700 hover:bg-gray-100/80"
-                                            }`}
+                                        className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300
+                                            ${activeFilters.includes(filter.key)
+                                                ? "text-custom-red after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-custom-red after:to-custom-brown"
+                                                : "text-gray-600 hover:text-custom-red after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-custom-red hover:after:w-full"
+                                            }
+                                          `}
                                     >
                                         {filter.label}
                                     </button>
@@ -133,40 +167,7 @@ const PersonalLibraryPage = () => {
                             </div>
                         </div>
                     )}
-                    <form
-                        onSubmit={handleSearch}
-                        className="relative flex items-center justify-center max-w-md mx-auto mb-4"
-                    >
-                        <input
-                            type="text"
-                            placeholder={(locale === "fa" ? "  ...جستجو کنید" : ".....Search")}
-                            value={query}
-                            onChange={(e) => setQuery(e.target.value)}
 
-                            className={`w-full rounded-3xl border border-[#C2B0B0]/40 bg-white/60 backdrop-blur-md py-2.5 text-sm text-[#3B2F2F] placeholder:text-[#A48E8E] focus:outline-none focus:ring-2 focus:ring-[#AF3E3E]/60 transition-all duration-300 shadow-sm ${locale === "fa" ? "px-12 pl-5 text-right" : "px-12 pl-4 text-left"
-                                }`}
-                        />
-
-                        {query && (
-                            <button
-                                type="button"
-                                onClick={clearSearch}
-                                className={`absolute p-1 text-gray-400 hover:text-gray-600 ${locale === "fa" ? "left-12" : "right-12"
-                                    }`}
-                            >
-                                <IoClose size={16} />
-                            </button>
-                        )}
-
-                        <button
-                            type="submit"
-                            className={`absolute p-2 rounded-3xl bg-[#AF3E3E] text-white hover:bg-[#AF3E3E]/90 transition-colors ${locale === "fa" ? "right-2.5" : "left-2.5"
-                                }`}
-                        >
-                            <IoSearch size={18} />
-                        </button>
-
-                    </form>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">

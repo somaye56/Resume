@@ -15,9 +15,9 @@ const AboutPage = () => {
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="md:col-span-2 bg-gradient-to-br p-6 rounded-2xl shadow-md hover:shadow-lg transition-all bg-[#896C6C]/10"
+                    className="md:col-span-2 bg-gradient-to-br p-6 rounded-2xl shadow-md hover:shadow-lg transition-all bg-card-bg/10"
                 >
-                    <h2 className="text-xl font-semibold mb-3  border-b-2 border-[#AF3E3E] inline-block pb-1">
+                    <h2 className="text-xl font-semibold mb-3  border-b-2 border-custom-red inline-block pb-1">
                         {About("title")}
                     </h2>
                     <div className="text-slate-700  space-y-2 rtl:space-x-reverse">
@@ -32,7 +32,7 @@ const AboutPage = () => {
 
                 <motion.div
                     whileHover={{ scale: 1.02 }}
-                    className="relative bg-[#896C6C]/10 backdrop-blur-lg p-6 rounded-2xl shadow-md transition-all"
+                    className="relative bg-card-bg/10 backdrop-blur-lg p-6 rounded-2xl shadow-md transition-all"
                 >
                     <Image
                         src="/profile.png"

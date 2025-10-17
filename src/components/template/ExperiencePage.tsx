@@ -35,13 +35,13 @@ const ExperiencePage = () => {
                                 <h3 className="font-medium text-lg">
                                     {exp.position}
                                 </h3>
-                                <span className="text-sm text-slate-500">{exp.years}</span>
+                                <span className="text-sm text-text-secondary">{exp.years}</span>
                             </div>
 
-                            <p className="text-sm text-[#AF3E3E] font-semibold mb-1">
+                            <p className="text-sm text-custom-red font-semibold mb-1">
                                 {exp.company}
                             </p>
-                            <p className="text-xs text-slate-500 mb-3">{exp.city}</p>
+                            <p className="text-xs text-text-secondary mb-3">{exp.city}</p>
 
                             <ul className="space-y-1 text-sm text-slate-600">
                                 {exp.responsibilities.map((item: string, idx: number) => (

@@ -90,7 +90,7 @@ const ContactPage: React.FC = () => {
               aria-invalid={!!errors.name}
               placeholder={Contact("namePlaceholder") || (locale === "fa" ? "نام" : "Name")}
               dir={locale === "fa" ? "rtl" : "ltr"}
-              className={`w-full border-b border-[#463d3b] p-2 rounded 
+              className={`w-full border-b border-text-muted p-2 rounded 
     placeholder:text-slate-400 
     ${locale === "fa" ? "text-right placeholder:text-right" : "text-left placeholder:text-left"} 
     ${errors.name ? "border-red-500" : ""}`}
@@ -115,7 +115,7 @@ const ContactPage: React.FC = () => {
               aria-invalid={!!errors.email}
               placeholder={Contact("emailPlaceholder") || (locale === "fa" ? "نام" : "Email")}
               dir={locale === "fa" ? "rtl" : "ltr"}
-              className={`w-full border-b border-[#463d3b] p-2 rounded ${errors.name ? "border-red-500" : ""}`}
+              className={`w-full border-b border-text-muted p-2 rounded ${errors.name ? "border-red-500" : ""}`}
             />
             {errors.email && (
               <p role="alert" className="mt-1 text-sm text-red-600">
@@ -134,7 +134,7 @@ const ContactPage: React.FC = () => {
               aria-invalid={!!errors.message}
               placeholder={Contact("messagePlaceholder") || (locale === "fa" ? "نام" : "Message")}
               dir={locale === "fa" ? "rtl" : "ltr"}
-              className={`w-full border-b border-[#463d3b] p-2 rounded ${errors.name ? "border-red-500" : ""}`}
+              className={`w-full border-b border-text-muted p-2 rounded ${errors.name ? "border-red-500" : ""}`}
             />
             {errors.message && (
               <p role="alert" className="mt-1 text-sm text-red-600">
@@ -146,7 +146,7 @@ const ContactPage: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group relative px-4 py-2 bg-gradient-to-r from-[#AF3E3E] to-[#DA6C6C] hover:from-[#CD5656] hover:to-[#DA6C6C] text-[#E5BEB5]  text-sm rounded-xl shadow-lg transition-all duration-300 transform  hover:shadow-xl"
+              className="group relative px-4 py-2 bg-gradient-to-r from-custom-red to-custom-brown hover:from-custom-orange] hover:to-custom-brown text-custom-text]  text-sm rounded-xl shadow-lg transition-all duration-300 transform  hover:shadow-xl"
             >
               {isSubmitting ? (Contact("sending") || "در حال ارسال...") : (Contact("send") || "ارسال")}
             </button>

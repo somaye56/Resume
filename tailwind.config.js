@@ -4,32 +4,44 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/**/*.{js,ts,jsx,tsx,mdx,css}"
+    "./src/**/*.{js,ts,jsx,tsx,mdx,css}"
   ],
   theme: {
-    extend: {
       colors: {
-        // پس‌زمینه
-        "bg-from": "#D6A99D",
-        "bg-via": "#FFF2EF",
-        "bg-to": "#ADB2D4",
-        "custom-red": "#AF3E3E",
-        "custom-brown": "#DA6C6C",
-
-        // متنی
-        "text-primary": "#324E2B",
-        "text-secondary": "#71543A",
-        "text-muted": "#463d3b",
-
-        "card-bg": "#896C6C1A",
-        "tag-bg": "#FFF58A80",
-
-        "border-light": "#C9D3C2",
-        "border-dark": "#463d3b",
-        "shadow-green": "#A2AF9B",
+        bg: {
+          from: "var(--color-bg-from)",
+          via: "var(--color-bg-via)",
+          to: "var(--color-bg-to)",
+        },
+        custom: {
+          red: "var(--color-custom-red)",
+          brown: "var(--color-custom-brown)",
+          orange: "var(--color-custom-orange)",
+          text: "var(--color-custom-text)",
+        },
+        text: {
+          primary: "var(--color-text-primary)",
+          secondary: "var(--color-text-secondary)",
+          muted: "var(--color-text-muted)",
+        },
+        card: {
+          bg: "var(--color-card-bg)",
+        },
+        tag: {
+          bg: "var(--color-tag-bg)",
+        },
+        border: {
+          light: "var(--color-border-light)",
+          dark: "var(--color-border-dark)",
+        },
+        shadow: {
+          green: "var(--color-shadow-green)",
+        },
+        light: {
+          hover: "var(--color-light-hover)",
+        },
       },
-    },
-
+ 
   },
   plugins: [],
 };
