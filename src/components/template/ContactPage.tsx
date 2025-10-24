@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 import { toast } from "react-toastify";

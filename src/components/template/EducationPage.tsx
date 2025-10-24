@@ -1,8 +1,7 @@
 "use client"
-import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
-import LineComponent from "../elements/LineComponent";
 import Card from "../elements/Card";
+import LineComponent from "../elements/LineComponent";
 interface EducationItem {
     degree: string;
     field: string;

@@ -1,8 +1,7 @@
 "use client"
-import { motion } from "framer-motion";
-import { useTranslations, useLocale } from 'next-intl';
-import LineComponent from "../elements/LineComponent";
+import { useLocale, useTranslations } from 'next-intl';
 import Card from "../elements/Card";
+import LineComponent from "../elements/LineComponent";
 
 interface ExperienceItem {
     position: string;
