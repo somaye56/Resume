@@ -8,20 +8,21 @@
     "don": "Download Resume",
     "desc": "I'm a Front-End Developer based in Kerman with over two years of professional experience in React.js and Next.js. Passionate about innovation, continuous learning, and creating engaging user interfaces."
   },
-  "about": {
-    "title": "About Me",
-    "birthDate": "1994/12/19",
-    "maritalStatus": "Single",
-    "email": "s0maye.baniasadiii@gmail.com",
-    "phone": "09356130954",
-    "city": "Kerman",
-    "SOne": "Front-End developer with 2+ years of professional experience",
-    "STwo": "Holds Bachelor's and Master's degrees in Physics, specializing in Nuclear and Complex Systems",
-    "STree": "Started professional programming career after completing an intensive bootcamp",
-    "SFour": "Proficient in JavaScript, React.js, and Next.js",
-    "SFive": "Building responsive, user-friendly websites with a focus on HTML, CSS, JavaScript, and React.js",
-    "SSix": "Passionate about innovation, continuous learning, and improving user experience through clean, efficient code and engaging design"
-  },
+"about": {
+  "title": "About Me",
+  "birthDate": "18 December 1994",
+  "maritalStatus": "Single",
+  "email": "s0maye.baniasadiii@gmail.com",
+  "phone": "+98 935 613 0954",
+  "city": "Kerman, Iran",
+  "SOne": "Front-End Developer with hands-on experience in real-world projects and professional environments",
+  "STwo": "Bachelor’s and Master’s degree in Physics with a focus on Nuclear Physics and Complex Systems",
+  "STree": "After completing a specialized programming bootcamp, I began my professional journey in web development",
+  "SFour": "Proficient in JavaScript, React.js, and Next.js",
+  "SFive": "Skilled in designing and developing responsive, user-friendly, and optimized websites",
+  "SSix": "Passionate about innovation, continuous learning, and improving user experience through clean code and modern design"
+}
+,
   "education": {
     "title": "Education",
     "items": [
