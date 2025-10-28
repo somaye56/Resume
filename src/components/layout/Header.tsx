@@ -78,7 +78,7 @@ const Header = ({ locale }: HeaderProps) => {
     <header
       className={`sticky top-0 z-50 transition-all duration-500 backdrop-blur-xl bg-gradient-to-r from-bg-from/70 to-[#F5F0E8]/70 shadow-md`}
     >
-      <div className="max-w-6xl mx-auto text-nowrap">
+      <div className="max-w-6xl mx-auto text-nowrap ">
         <div className="flex items-center justify-between py-4 px-4">
           <div className="flex items-center gap-2">
             <h1 className="text-lg font-semibold bg-gradient-to-r from-card-bg to-custom-red bg-clip-text text-transparent">
@@ -87,10 +87,10 @@ const Header = ({ locale }: HeaderProps) => {
           </div>
 
           <nav className="hidden lg:block">
-            <ul className="flex items-center space-x-3 rtl:space-x-reverse">
+            <ul className="flex items-center text-xl space-x-3 rtl:space-x-reverse">
               <li
                 onClick={toggleLanguage}
-                className="cursor-pointer ml-4 px-2 py-1 rounded hover:bg-gray-100/50 transition-colors"
+                className="cursor-pointer ml-4 px-2 py-1  hover:bg-bg-via/50 transition-colors"
               >
                 {currentLocale === "fa" ? "English" : "فارسی"}
               </li>

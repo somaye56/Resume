@@ -85,19 +85,19 @@ const PersonalLibraryPage = () => {
                 </h2>
                 <LineComponent className="mb-6" />
                 <div className="max-w-4xl mx-auto ">
-                    <div tabIndex={0} 
+                    <div tabIndex={0}
                         onBlur={() => setShowFilters(false)} className="flex flex-wrap gap-3 mb-4 justify-center items-center relative w-full">
 
                         <form
                             onSubmit={handleSearch}
-                            className="relative flex items-center justify-center w-full sm:w-3/4"
+                            className="relative flex items-center justify-center w-full sm:w-3/4 p-2"
                         >
                             <input
                                 type="text"
                                 placeholder={locale === "fa" ? "جستجو کنید..." : "Search..."}
                                 value={query}
                                 onChange={(e) => setQuery(e.target.value)}
-                                className={`w-full rounded-3xl bg-tag-bg/50 backdrop-blur-md py-2.5 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-custom-red/70 transition-all duration-300 shadow-sm
+                                className={`w-full rounded-3xl bg-tag-bg/50 backdrop-blur-md p-2.5  text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-custom-red/70 transition-all duration-300 shadow-sm
           ${locale === "fa" ? "pr-12 pl-4 text-right" : "pl-12 pr-4 text-left"}`}
                             />
 
@@ -138,34 +138,34 @@ const PersonalLibraryPage = () => {
                             {locale === "fa" ? "فیلتر" : "Filter"}
                         </button>
                     </div>
-
                     {showFilters && (
-
-                        <div
-                            className={`absolute z-10 top-[13.29rem]  w-36 bg-white
-                                 rounded-2xl ${locale === "fa" ? "right-1/6" : "left-1/4"
-                                }`}
-                        >
-                            <div className="flex flex-col gap-2 p-3">
-                                {[
-                                    { key: "articles", label: locale === "fa" ? "مقالات" : "Articles" },
-                                    { key: "courses", label: locale === "fa" ? "دوره‌ها" : "Courses" },
-                                    { key: "tools", label: locale === "fa" ? "ابزارها" : "Tools" },
-                                    { key: "videos", label: locale === "fa" ? "ویدیوها" : "Videos" },
-                                ].map((filter) => (
-                                    <button
-                                        key={filter.key}
-                                        onMouseDown={() => toggleFilter(filter.key)}
-                                        className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300
+                        <div className="flex justify-center relative">
+                            <div
+                                className={`absolute z-10 -top-[8rem] w-36 bg-white
+                                 rounded-2xl  ${locale === "fa" ? "-right-[6rem] " : "left-1/4"
+                                    }`}
+                            >
+                                <div className="flex flex-col gap-2 p-3">
+                                    {[
+                                        { key: "articles", label: locale === "fa" ? "مقالات" : "Articles" },
+                                        { key: "courses", label: locale === "fa" ? "دوره‌ها" : "Courses" },
+                                        { key: "tools", label: locale === "fa" ? "ابزارها" : "Tools" },
+                                        { key: "videos", label: locale === "fa" ? "ویدیوها" : "Videos" },
+                                    ].map((filter) => (
+                                        <button
+                                            key={filter.key}
+                                            onMouseDown={() => toggleFilter(filter.key)}
+                                            className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300
                                             ${activeFilters.includes(filter.key)
-                                                ? "text-custom-red after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-custom-red after:to-custom-brown"
-                                                : "text-gray-600 hover:text-custom-red after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-custom-red hover:after:w-full"
-                                            }
+                                                    ? "text-custom-red after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-custom-red after:to-custom-brown"
+                                                    : "text-gray-600 hover:text-custom-red after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-custom-red hover:after:w-full"
+                                                }
                                           `}
-                                    >
-                                        {filter.label}
-                                    </button>
-                                ))}
+                                        >
+                                            {filter.label}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     )}
