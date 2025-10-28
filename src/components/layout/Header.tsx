@@ -87,7 +87,7 @@ const Header = ({ locale }: HeaderProps) => {
           </div>
 
           <nav className="hidden lg:block">
-            <ul className="flex items-center text-xl space-x-3 rtl:space-x-reverse">
+            <ul className="flex items-center  space-x-3 rtl:space-x-reverse">
               <li
                 onClick={toggleLanguage}
                 className="cursor-pointer ml-4 px-2 py-1  hover:bg-bg-via/50 transition-colors"
