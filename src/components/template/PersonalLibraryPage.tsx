@@ -139,10 +139,10 @@ const PersonalLibraryPage = () => {
                         </button>
                     </div>
                     {showFilters && (
-                        <div className="flex justify-center relative">
+                        <div className=" relative ">
                             <div
-                                className={`absolute z-10 -top-[8rem] w-36 bg-white
-                                 rounded-2xl  ${locale === "fa" ? "-right-[6rem] " : "left-1/4"
+                                className={`absolute z-10 lg:-top-[8rem] -top-[10rem] w-36 bg-white 
+                                 rounded-2xl  ${locale === "fa" ? "lg:-right-[6rem] right-[4.65rem]" : "lg:-left-[6rem] left-[4.65rem]"
                                     }`}
                             >
                                 <div className="flex flex-col gap-2 p-3">
