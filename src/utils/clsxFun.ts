@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { clsx } from "clsx";
 
-const cn = (...inputs) => {
+const cn = (...inputs: (string | undefined)[]) => {
       return twMerge(clsx(inputs));
 };
 
