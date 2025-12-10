@@ -32,10 +32,18 @@ const ProjectPage = () => {
               <div className="flex flex-col h-full text-left">
 
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-semibold  transition-colors duration-300">
-                    {project.name}
-                  </h3>
-                  <ExternalLink className="w-5 h-5 text-bg-to group-hover:text-text-secondary50 transition-colors duration-300" />
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center justify-between w-full"
+                    aria-label={`${project.name} - open link`}
+                  >
+                    <h3 className="text-lg font-semibold transition-colors duration-300 group-hover:text-text-secondary50">
+                      {project.name}
+                    </h3>
+                    <ExternalLink className="w-5 h-5 text-bg-to group-hover:text-text-secondary50 transition-colors duration-300 ml-3" />
+                  </a>
                 </div>
 
 
